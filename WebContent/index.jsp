@@ -9,7 +9,6 @@
 <body>
 
 	<h1>Welcome</h1>
-
-	<a href="welcome.html">productos</a>
+	<a href="productos.html">productos</a>
 </body>
 </html>
