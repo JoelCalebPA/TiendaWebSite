@@ -28,5 +28,12 @@
 		<property name="productoDAO" ref="productoDAO" />
 	</bean>
 
+	<bean id="categoriaDAO" class="com.caleb.businesslogic.CategoriaBLogic">
+	</bean>
+	
+	<bean id="categoriaService" class="com.caleb.tienda.website.service.CategoriaServiceImpl">
+		<property name="categoriaDAO" ref="categoriaDAO"></property>
+	</bean>
+
 
 </beans>
