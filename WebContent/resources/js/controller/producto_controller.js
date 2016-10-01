@@ -48,9 +48,9 @@ angular.module('myApp').controller('ProductoController', ['$scope', 'ProductoSer
             }
         );
     }
-	
+		
 	function listar(id) {
 		listarProductosPorCategoria(id);
 	}
-    
+	
 }]);

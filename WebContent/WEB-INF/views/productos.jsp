@@ -43,6 +43,11 @@
 	box-shadow: 0 0 30px black;
 }
 </style>
+<script type="text/javascript">
+	function imagen(id) {
+		return "/resources/imagenes/" + id.toString() + ".jpg";
+	}
+</script>
 </head>
 <body ng-app="myApp" class="ng-cloak">
 
@@ -79,7 +84,8 @@
 			</ul>
 			<form class="navbar-form navbar-left">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Buscar producto">
+					<input type="text" class="form-control"
+						placeholder="Buscar producto">
 				</div>
 				<button type="submit" class="btn btn-default">Buscar</button>
 			</form>
@@ -123,6 +129,7 @@
 					<table class="table table-hover">
 						<thead>
 							<tr>
+								<th></th>
 								<th>ID</th>
 								<th>Descripcion</th>
 								<th>Categoria</th>
@@ -133,6 +140,8 @@
 						</thead>
 						<tbody>
 							<tr ng-repeat="p in ctrl.productos">
+								<td><img width="100" height="100" alt=""
+									src="<c:url value='/resources/imagenes/{{ p.id_producto }}.jpg' />" /></td>
 								<td><span ng-bind="p.id_producto"></span></td>
 								<td><span ng-bind="p.descripcion"></span></td>
 								<td><span ng-bind="p.categoria.descripcion"></span></td>

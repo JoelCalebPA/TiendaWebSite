@@ -67,5 +67,10 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.5.0</version>
 		</dependency>
+		<dependency>
+			<groupId>TiendaPersistence</groupId>
+			<artifactId>TiendaPersistence</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
